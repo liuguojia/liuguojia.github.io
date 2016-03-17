@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2014-03-17 19:51:13
+ * @version $Id$
+ */
+	/*初始化*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, and, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, textarea, select {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	/*背景透明*/
+	background: transparent;
+	/*垂直对齐图像*/
+	vertical-align: baseline;
+}
+a{
+	text-decoration: none;
+}
+.clear{
+	clear: both;
+}
+@font-face{font-family: "logo";src: url(../fonts/logo.ttf);}
+@font-face{font-family: "title";src: url(../fonts/title.TTF);}
+@font-face{font-family: "menu";src: url(../fonts/menu.TTF);}
+
+#header{
+	min-width: 1030px;
+	height: 90px;
+	background-color: #111;
+}
+#header .nav{
+	width: 1030px;
+	height: 90px;
+	margin: 0 auto;
+}
+#header .nav .nav-logo{
+	width: 150px;
+	height: 70px;
+	padding-top: 10px;
+	display: block;
+	float: left;
+}
+#header .nav .nav-logo p{
+	color: #2BABCF;
+	font-family: "logo";
+	font-size: 32px;
+	text-align: center;
+}
+#header .nav .nav-list{
+	width: 650px;
+	height: 87px;
+	list-style: none;
+	float: right;
+	color: #2BABCF;
+}
+#header .nav .nav-list li{
+	font-size: 22px;
+	font-family: "menu";
+	float: left;
+	height: 80px;
+	line-height: 80px;
+}
+#header .nav .nav-list li a{
+	color: #fff;
+	margin: 20px;
+}
+#header .nav .nav-list li a:hover{
+	color: #2BABCF;
+}
+#header .nav .nav-list li .active-a{
+	color: #2BABCF;
+}
+#header .nav .nav-list .active{
+	border-top: 3px solid #2BABCF;
+}
+#header .nav .nav-list .list-menu{
+	margin-top: 3px;
+}
+
+#header .home-slider{
+	height: 490px;
+}
+#header .home-slider .container{
+	height: 410px;
+	width: 1030px;
+	margin: 0 auto;
+	background-color: #;
+}
+#header .home-slider .container-item{
+	width: 1030px;
+	height: 410px;
+	position: relative;
+	overflow: hidden;
+}
+#header .home-slider .container-item .item-list{
+	width: 3090px;
+	height: 410px;
+}
+#header .home-slider .container .item-img-1{
+	background-image: url(../image/slide01.jpg);
+	height: 410px;
+	width: 1030px;
+	float: left;
+}
+#header .home-slider .container .item-img-2{
+	background-image: url(../image/slide02.jpg);
+	height: 410px;
+	width: 1030px;
+	float: left;
+}
+#header .home-slider .container .item-img-3{
+	background-image: url(../image/slide03.jpg);
+	height: 410px;
+	width: 1030px;
+	float: left;
+}
+#header .home-slider .container .item-btn{
+	height: 50px;
+	width: 1000px;
+	margin: 0 auto;
+	position: absolute;
+	top: 160px;
+	left: 15px;
+}
+#header .home-slider .container .item-btn .btn{
+	height: 50px;
+	width: 50px;
+}
+#header .home-slider .container .item-btn .item-next{
+	float: right;
+}
+#header .home-slider .container .item-btn .btn a{
+	opacity: 0.3;
+}
+#header .home-slider .container .item-btn .btn a:hover{
+	opacity: 0.7;
+}
+#header .home-slider .container .carousel-indicators{
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	top: 350px;
+	right: 40px;
+}
+#header .home-slider .container .carousel-indicators ol li{
+	float: left;
+	list-style: none;
+	width: 15px;
+	height: 15px;
+	border: 3px solid rgba(255, 255, 255, .6);
+	margin-right: 5px;
+	cursor: pointer;
+}
+#header .home-service{
+	height: 80px;
+	background-color: #2babcf;
+	color: #fff;
+	font-size: 22px;
+	font-family: "title";
+	text-align: center;
+	line-height: 80px;
+}
