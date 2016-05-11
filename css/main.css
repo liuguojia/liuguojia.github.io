@@ -1,0 +1,434 @@
+
+
+/*初始化*/
+html,body{
+	font-family: Arial,"微软雅黑";
+	font-size: 0.14rem;
+	background-color: #f2f4f8;
+}
+/*清浮动*/
+.clearfix:before,.clearfix:after{
+	display: block;
+	content: "";
+}
+.clearfix:after{
+	clear: both;
+}
+
+#container{
+	width: 100%;
+}
+
+/*头部样式*/
+#container .top{
+	width: 96%;
+	margin: 0 auto;
+}
+header{
+	background-color: rgb(6, 217, 149);
+}
+
+header .top h1{
+	font-size:0.3rem;
+	padding: 0.1rem 0.15rem;
+	float: left;
+}
+header .top h1 a{
+	text-decoration: none;
+	color: #fff;
+}
+header .top ul{
+	float: right;
+	margin-right: 0.2rem;
+}
+header .top ul li{
+	float: left;
+	margin-left: 0.2rem;
+}
+header .top ul li:nth-child(1) a{
+	padding:0.08rem 0.05rem;
+	border-radius: 0.5rem;
+	border: 1px solid #fff;
+	color: #fff;
+	line-height: 0.54rem;
+}
+header .top ul li i{
+	font-size: 0.23rem;
+	line-height: 0.54rem;
+}
+
+header .top ul li img{
+	width: 0.4rem;
+	margin-top: 0.07rem;
+}
+
+/*导航栏样式*/
+
+#container .fa-th-large{
+	display: none;
+}
+
+section{
+	width: 100%;
+}
+section nav{
+	width: 2.5rem;
+	background-color: #000;
+	padding-bottom: 0.2rem;
+	float: left;
+}
+#container section nav .user{
+	color: #fff;
+	width: 2rem;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 0.2rem;
+	font-size: 0.16rem;
+}
+#container section nav p{
+	float: none;
+}
+#container section nav .user img{
+	width: 1rem;
+	padding-bottom: 0.15rem;
+}
+section nav li{
+	cursor: pointer;
+	color: #999999;
+}
+section nav li:hover,a:hover{
+	color: #fff;
+}
+section nav li:hover{
+	color: #fff;
+}
+
+section nav a{
+	color: #999999;
+	text-decoration: none;
+}
+section nav i{
+	color: #fff;
+	width: 0.3rem;
+	text-align: center;
+}
+section nav .menu{
+	margin-left: 0.3rem;
+	padding-top: 0.2rem;
+}
+
+
+section nav .menu li{
+	padding: 0.1rem 0;
+}
+
+section nav .drop-down{
+	display: none;
+	margin-left: 0.2rem;
+}
+section nav .fa-angle-left,.fa-angle-down{
+	float: right;
+	margin-right: 0.3rem;
+}
+section nav .drop-down li{
+	padding: 0.03rem 0;
+}
+
+
+#container section .nav-active a{
+	color: #fff;
+}
+
+
+/*主体内容区域*/
+section .content{
+	background-color:#f2f4f8;
+	float: right;
+}
+section .content .right-center{
+	margin-top: 0.16rem;
+}
+section .right-top .title{
+	width: 1.74rem;
+	background-color: #fff;
+	box-shadow: 0 0 4px #999;
+	margin-top:0.32rem;
+	float: left;
+	margin-right: 0.1rem;
+}
+
+section .right-top .title i{
+	display: block;
+	width: 0.5rem;
+	text-align: center;
+	line-height: 0.5rem;
+	color: #fff;
+	border-radius: 0.5rem;
+	margin: 0.1rem;
+	font-size: 0.28rem;
+}
+section .right-top .title p{
+	font-size: 0.18rem;
+	padding-top: 0.15rem;
+	padding-bottom: 0.15rem;
+}
+
+section .right-top .fa-thumbs-up{
+	background-color: #9358ac;
+}
+section .right-top .fa-users{
+	background-color: #ef553a;
+}
+section .right-top .fa-comment{
+	background-color: #3b5998;
+}
+section .right-top .fa-dollar{
+	background-color: #00aced;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*日历样式*/
+
+.right-center .date{
+	width: 2.3rem;
+	box-shadow: 0 0 4px #999;
+}
+.right-center .date-top i{
+	font-size:0.22rem;
+	color: #fff;
+	cursor: pointer;
+	line-height: 0.6rem;
+}
+.right-center .date-top i:nth-child(1){
+	margin-left: 0.13rem;
+}
+.right-center .date-top p{
+	line-height: 0.22rem;
+}
+
+.right-center .date-top i,p{
+	float: left;
+}
+.right-center .date-top{
+	background-color:#06D995;
+	text-align: center;
+	display: block;
+}
+.right-center .date p{
+	padding: 0.2rem 0.1rem;
+}
+
+.right-center .date .date-list{
+	background-color: #fff;
+	width: 100%;
+}
+
+.right-center .date .list-day{
+	width: 96%;
+	margin: 0 auto;
+	color: #06D995;
+}
+
+.right-center .date .list-day li{
+	float: left;
+	font-size: 0.14rem;
+	padding: 0.1rem 0.085rem;
+}
+.right-center .date .list-today{
+	width: 96%;
+	margin: 0 auto;
+}
+
+.right-center .list-today li{
+	text-align: center;
+	float: left;
+	font-size: 0.16rem;
+	width: 0.3rem;
+	padding: 0.05rem 0rem;
+	margin-left: 1px;
+	cursor: pointer;
+	color: #999999;
+}
+.right-center .list-today li:hover{
+	background-color: #02D08E;
+	color: #000;
+}
+
+
+
+
+
+.date-active{
+	background-color:#02D08E;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS3 导航栏过渡效果的延迟 */
+.menu li:hover .drop-down li:nth-child(1) {
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.menu li:hover .drop-down li:nth-child(2) {
+    -webkit-transition-delay: 50ms;
+    -moz-transition-delay: 50ms;
+    -ms-transition-delay: 50ms;
+    -o-transition-delay: 50ms;
+    transition-delay: 50ms;
+}
+.menu li:hover .drop-down li:nth-child(3) {
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    -ms-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+}
+.menu li:hover .drop-down li:nth-child(4) {
+    -webkit-transition-delay: 150ms;
+    -moz-transition-delay: 150ms;
+    -ms-transition-delay: 150ms;
+    -o-transition-delay: 150ms;
+    transition-delay: 150ms;
+}
+.menu li:hover .drop-down li:nth-child(5) {
+    -webkit-transition-delay: 200ms;
+    -moz-transition-delay: 200ms;
+    -ms-transition-delay: 200ms;
+    -o-transition-delay: 200ms;
+    transition-delay: 200ms;
+}
+.menu li:hover .drop-down li:nth-child(6) {
+    -webkit-transition-delay: 250ms;
+    -moz-transition-delay: 250ms;
+    -ms-transition-delay: 250ms;
+    -o-transition-delay: 250ms;
+    transition-delay: 250ms;
+}
+.menu li:hover .drop-down li:nth-child(7) {
+    -webkit-transition-delay: 300ms;
+    -moz-transition-delay: 300ms;
+    -ms-transition-delay: 300ms;
+    -o-transition-delay: 300ms;
+    transition-delay: 300ms;
+}
+.menu li:hover .drop-down li:nth-child(8) {
+    -webkit-transition-delay: 350ms;
+    -moz-transition-delay: 350ms;
+    -ms-transition-delay: 350ms;
+    -o-transition-delay: 350ms;
+    transition-delay: 350ms;
+}
+.menu li:hover .drop-down li:nth-child(8) {
+    -webkit-transition-delay: 400ms;
+    -moz-transition-delay: 400ms;
+    -ms-transition-delay: 400ms;
+    -o-transition-delay: 400ms;
+    transition-delay: 400ms;
+}
+
+.drop-down li:nth-child(1) {
+    -webkit-transition-delay: 400ms;
+    -moz-transition-delay: 400ms;
+    -ms-transition-delay: 400ms;
+    -o-transition-delay: 400ms;
+    transition-delay: 400ms;
+}
+.drop-down li:nth-child(2) {
+    -webkit-transition-delay: 350ms;
+    -moz-transition-delay: 350ms;
+    -ms-transition-delay: 350ms;
+    -o-transition-delay: 350ms;
+    transition-delay: 350ms;
+}
+.drop-down li:nth-child(3) {
+    -webkit-transition-delay: 300ms;
+    -moz-transition-delay: 300ms;
+    -ms-transition-delay: 300ms;
+    -o-transition-delay: 300ms;
+    transition-delay: 300ms;
+}
+.drop-down li:nth-child(4) {
+    -webkit-transition-delay: 250ms;
+    -moz-transition-delay: 250ms;
+    -ms-transition-delay: 250ms;
+    -o-transition-delay: 250ms;
+    transition-delay: 250ms;
+}
+.drop-down li:nth-child(5) {
+    -webkit-transition-delay: 200ms;
+    -moz-transition-delay: 200ms;
+    -ms-transition-delay: 200ms;
+    -o-transition-delay: 200ms;
+    transition-delay: 200ms;
+}
+.drop-down li:nth-child(6) {
+    -webkit-transition-delay: 150ms;
+    -moz-transition-delay: 150ms;
+    -ms-transition-delay: 150ms;
+    -o-transition-delay: 150ms;
+    transition-delay: 150ms;
+}
+.drop-down li:nth-child(7) {
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    -ms-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+}
+.drop-down li:nth-child(8) {
+    -webkit-transition-delay: 50ms;
+    -moz-transition-delay: 50ms;
+    -ms-transition-delay: 50ms;
+    -o-transition-delay: 50ms;
+    transition-delay: 50ms;
+}
+.drop-down li:nth-child(9) {
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}

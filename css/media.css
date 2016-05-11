@@ -1,0 +1,145 @@
+@media screen and (min-width: 320px) and (max-width: 760px) {
+	/*头部样式*/
+	header{
+		background-color: rgb(6, 217, 149);
+	}
+
+	header .top h1{
+		font-size:0.6rem;
+		padding: 0.1rem 0.15rem;
+		float: left;
+	}
+	header .top ul li{
+		margin-left: 0.5rem;
+	}
+	header .top ul li:nth-child(1) a{
+		padding:0.16rem 0.05rem;
+		border-radius: 0.5rem;
+		border: 0;
+		color: #fff;
+		line-height: 0.9rem;
+	}
+	header .top ul li i{
+		font-size: 0.43rem;
+		line-height: 0.9rem;
+	}
+	header .top ul li img{
+		width: 0.8rem;
+		margin-top: 0.07rem;
+	}
+
+	/*导航栏样式*/
+	#container .fa-th-large{
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		margin-top: 0.1rem;
+		font-size: 0.3rem;
+		float: left;
+	}
+	#container nav {width: 100%;}
+
+
+
+	section nav .user img{
+		width: 1.5rem;
+	}
+	section nav .user p{
+		font-size: 0.4rem;
+	}
+	section nav .user{
+		cursor: pointer;
+		padding-bottom: 0.25rem;
+	}
+
+	section nav .menu{
+		display: none;
+		margin: 0 auto;
+		width: 60%;
+		font-size: 0.40rem;
+		padding-bottom: 0.25rem;
+	}
+	section nav i{
+		width: 1rem;
+	}
+	section nav .drop-down{
+		margin-left: 0.7rem;
+	}
+
+
+	/*主题内容部分*/
+	section .content{
+		width: 96%;
+		margin: 0 auto;
+
+	}
+
+	section .right-top .title{
+		width: 4rem;
+		box-shadow: 0 0 3px #999;
+		margin-top:0.32rem;
+		float: left;
+		margin-left: 0.5rem;
+	}
+
+	section .right-top .title i{
+		width: 1rem;
+		line-height: 1rem;
+		margin: 0.3rem;
+		font-size: 0.65rem;
+	}
+
+	section .right-top .title p{
+		font-size: 0.35rem;
+		padding-top: 0.35rem;
+		padding-bottom: 0.15rem;
+	}
+
+
+
+	/*日历样式*/
+	.right-center .date{
+		display: none;
+	}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
