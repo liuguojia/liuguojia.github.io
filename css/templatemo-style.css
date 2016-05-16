@@ -4,9 +4,6 @@ Workforce Template
 
 
 */
-html,body{
-    font-family: "微软雅黑",Arial;
-}
 
 body
     {
@@ -20,7 +17,7 @@ body
 hr
     {
         border: 1px solid #55acee;
-        width: 350px;
+        width: 100px;
         margin-top: 20px;
     }
 /* end hr */
@@ -140,7 +137,7 @@ h4
      {
          color: #999;
          font-weight: 300;
-         font-size: 16px;
+         font-size: 13px;
          text-transform: uppercase;
     }
 .custom-navbar .nav li a:hover
@@ -596,16 +593,8 @@ footer span
     .filter-wrapper li a {
         padding: 6px 10px;
     }
-    hr{
-        border: 1px solid #55acee;
-        width: 200px;
-        margin-top: 20px;
-    }
-    .custom-navbar .nav li a{
-         color: #999;
-         font-weight: 300;
-         font-size: 14px;
-         text-transform: uppercase;
+    .custom-navbar .navbar-brand{
+        font-size: 22px;
     }
 }
 
@@ -616,17 +605,7 @@ footer span
     .custom-navbar .navbar-brand{
         font-size: 20px;
     }
-    hr{
-        border: 1px solid #55acee;
-        width: 200px;
-        margin-top: 20px;
-    }
-    .custom-navbar .nav li a{
-         color: #999;
-         font-weight: 300;
-         font-size: 14px;
-         text-transform: uppercase;
-    }}
+}
 
 /* start media 360 */
 @media screen and ( max-width: 360px ){
@@ -636,18 +615,7 @@ footer span
             line-height: 1.5em;
         }
     .custom-navbar .navbar-brand{
-        font-size: 18px;
-    }
-    hr{
-        border: 1px solid #55acee;
-        width: 200px;
-        margin-top: 20px;
-    }
-    .custom-navbar .nav li a{
-         color: #999;
-         font-weight: 300;
-         font-size: 14px;
-         text-transform: uppercase;
+        font-size: 16px;
     }
 }
 /* end media 360 */
