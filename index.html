@@ -1,142 +1,508 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
-<title>刘策的主页</title>
-<meta name="description" content="">
-<meta name="keywords" content="">
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
-<link href="css/media.css" rel="stylesheet">
-<link href="css/font-awesome.min.css" rel="stylesheet">
-<link href="css/date.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>刘策的微博</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
 
-<script src="js/checkUserAgent.js"></script>
-<script src="js/fontsizeset.js"></script>
-
+	<link href='http://fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/templatemo-style.css">
 </head>
-<body>
-
-	<div id="container">
-		<header class="clearfix">
-			<div class="top">
-				<h1>
-					<a href="index.html">一个前端工程师的自我修养</a>
-				</h1>
-				<ul>
-					<li><a href=""><i class="fa fa-comments-o"></i></a></li>
-					<li><a href=""><img src="images/3.png" alt=""></a></li>
-				</ul>
-			</div>
-		</header>
-		<section>
-			<nav>
-				<div class="user clearfix">
-					<img src="images/3.png" alt="">
-					<p>刘策</p>
-					<p>前端工程师</p>
-					<!-- <i class="fa fa-th-large nav_icon"></i> -->
-				</div>
-				<ul class="menu">
-					<li><a href="index.html"><i class="fa fa-dashboard nav_icon"></i>综合信息</a></li>
-					<li><a href="pages/page2.html"><i class="fa fa-user nav_icon"></i>我的信息</a></li>
-					<li class="menu-down">
-						<i class="fa fa-file-code-o nav_icon"></i>技术资料
-						<i class="fa fa-angle-left nav_icon"></i>
-					</li>
-						<ul class="drop-down">
-							<li><a href="doc/doc-page1.html"><i class="fa fa-html5 nav_icon"></i>HTML5</a></li>
-							<li><a href="doc/doc-page2.html"><i class="fa fa-css3 nav_icon"></i>CSS3</a></li>
-							<li><a href="doc/doc-page3.html"><i class="fa fa-gears nav_icon"></i>JQuery</a></li>
-							<li><a href="doc/doc-page4.html"><i class="fa fa-eye nav_icon"></i>JavaScript</a></li>
-							<li><a href="doc/doc-page5.html"><i class="fa fa-code nav_icon"></i>Node</a></li>
-							<li><a href="doc/doc-page6.html"><i class="fa fa-cubes nav_icon"></i>Angular</a></li>
-							<li><a href="doc/doc-page7.html"><i class="fa fa-cube nav_icon"></i>Swiper</a></li>
-							<li><a href="doc/doc-page8.html"><i class="fa fa-inbox nav_icon"></i>Zepto</a></li>
-							<li><a href="doc/doc-page9.html"><i class="fa fa-bold nav_icon"></i>Bootstrap</a></li>
-						</ul>
-					<li><a href="pages/page3.html"><i class="fa fa-wpforms nav_icon"></i>个人笔记</a></li>
-					<li><a href="pages/page4.html"><i class="fa fa-laptop nav_icon"></i>参与项目</a></li>
-					<li><a href="pages/page5.html"><i class="fa fa-star nav_icon"></i>收藏站点</a></li>
-					<li><a href="pages/page6.html"><i class="fa fa-users nav_icon"></i>好友</a>
-					<li><a href="pages/page7.html"><i class="fa fa-envelope nav_icon"></i>联系</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="content">
-				<div class="right-top clearfix">
-					<div class="title">
-						<i class="pull-left fa fa-thumbs-up icon-rounded"></i>
-						<p><span>10%</span><br>项目完成度</p>
-					</div>
-					<div class="title">
-						<i class="pull-left fa fa-users user1 icon-rounded"></i>
-						<p><span>48人</span><br>项目组</p>
-					</div>
-					<div class="title">
-						<i class="pull-left fa fa-comment user2 icon-rounded"></i>
-						<p><span>1024</span><br>信息</p>
-					</div>
-					<div class="title">
-						<i class="pull-left fa fa-dollar dollar1 icon-rounded"></i>
-						<p><span>---</span><br>资金</p>
-					</div>
-				</div>
-				<div class="right-center">
-					<div class="date">
-						<div class="date-top clearfix">
-							<i class="fa fa-arrow-circle-o-left"></i>
-							<p>
-								<span class="date-year"></span>年
-								<span class="date-month"></span>月
-								<span class="date-today"></span>日 星期
-								<span class="date-day"></span>
-							</p>
-							<i class="fa fa-arrow-circle-o-right"></i>
-						</div>
-						<div class="date-list">
-							<ul class="list-day clearfix">
-								<li>日</li>
-								<li>一</li>
-								<li>二</li>
-								<li>三</li>
-								<li>四</li>
-								<li>五</li>
-								<li>六</li>
-							</ul>
-							<ul class="list-today clearfix"></ul>
-						</div>
-					</div>
-			    </div>
-			</div>
-
-		</section>
-
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+	<div class="preloader">
+		<div class="sk-spinner sk-spinner-rotating-plane"></div>
 	</div>
+	<nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">一个前端工程师的自我修养</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home" class="smoothScroll">主页</a></li>
+					<li><a href="#service" class="smoothScroll">前端开发</a></li>
+					<li><a href="#about" class="smoothScroll">个人简介</a></li>
+					<li><a href="#portfolio" class="smoothScroll">参与的项目</a></li>
+					<li><a href="#contact" class="smoothScroll">联系</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- start home -->
+	<section id="home">
+		<div class="overlay">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img src="images/slider/1.jpg" alt="Slide 1">
+						<div class="slider-caption">
+							<div class="templatemo_homewrapper">
+								<h3 class="wow bounceIn">Web 前端开发</h3>
+								<h1 class="wow bounce">响应式布局</h1>
+								<h2>
+									<span class="wow fadeIn" data-wow-delay="0.3s">桌面</span>
+									<span class="wow fadeIn" data-wow-delay="0.6s">移动端</span>
+									<span class="wow fadeIn" data-wow-delay="0.9s">极致的用户体验</span>
+								</h2>
+								<a href="#portfolio" class="smoothScroll templatemo-slider-btn btn btn-default">了解更多</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<img src="images/slider/2.jpg" alt="Slide 2">
+						<div class="slider-caption">
+							<div class="templatemo_homewrapper">
+                            	<h2>CSS3 HTML5</h2>
+								<h1>JavaScript NODE.JS</h1>
+								<h3>所有最新浏览器支持+</h3>
+								<a href="#about" class="smoothScroll templatemo-slider-btn btn btn-default">我的个人简介</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- end home -->
+	<!-- start service -->
+	<section id="service">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center wow bounceIn">
+					<h2>前端开发技术</h2>
+					<hr>
+					<h4>专注于最新的前端开发技术</h4>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-university" aria-hidden="true"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">慕课网</h3>
+							<p><a href="http://www.imooc.com/">程序员的梦工厂</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-github" aria-hidden="true"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Github</h3>
+							<p><a href="https://github.com/">Github官网</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-github-alt" aria-hidden="true"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Coding</h3>
+							<p><a href="https://coding.net/">Coding官网</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-user-plus" aria-hidden="true"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">廖雪峰</h3>
+							<p><a href="http://www.liaoxuefeng.com/">廖雪峰博客</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-pie-chart" aria-hidden="true"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">ECharts 插件</h3>
+							<p><a href="http://echarts.baidu.com/">ECharts 中文官网</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-mobile" aria-hidden="true"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Zepto 插件</h3>
+							<p><a href="http://www.css88.com/doc/zeptojs_api/">Zepto 中文官网</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-jsfiddle" aria-hidden="true"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Swiper 插件</h3>
+							<p><a href="http://www.swiper.com.cn/">Swiper 中文官网</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-usd" aria-hidden="true"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">JQuery文档手册</h3>
+							<p><a href="http://jquery.cuishifeng.cn/">JQuery中文文档手册</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-file-word-o" aria-hidden="true"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">领先的 Web 技术教程</h3>
+							<p><a href="http://www.w3school.com.cn/">W3C-SCHOOL</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-usd" aria-hidden="true"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">SublimeText 3</h3>
+							<p><a href="http://jquery.cuishifeng.cn/">Sublime text3 – Gutter Color</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-bold" aria-hidden="true"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Bootstrap</h3>
+							<p><a href="http://www.bootcss.com/">Bootstrap中文网</a></p>
+							<p><a href="http://getbootstrap.com/">Bootstrap英文官网</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-flag" aria-hidden="true"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Font Awesome</h3>
+							<p><a href="http://fontawesome.io/">The iconic font and CSS toolkit</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-rss" aria-hidden="true"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">博客园</h3>
+							<p><a href="http://www.cnblogs.com/">博客园官网</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-lastfm" aria-hidden="true"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Stack Overflow</h3>
+							<p><a href="http://www.iteye.com/">Stack Overflow中文</a></p>
+							<p><a href="http://stackoverflow.com/">Stack Overflow英文</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end service -->
+	<!-- start divider -->
+	<div class="divider">
+		<div class="overlay">
+			<div class="container">
+				<div class="row">
+					<div class="divider-des">
+						<h3 class="text-uppercase">收集的各种前端开发库压缩包</h3>
+						<p>bootstrap,jQuery,nodeJs,Zepto,Swiper,Awesome,angularJs</p>
+						<button class="btn btn-default text-uppercase">下载压缩包</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end divider -->
+	<!-- start about -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 wow bounceIn">
+					<h2>刘策的简介</h2>
+					<hr>
+					<h4>任何值得做的事就值得把它做好！</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6 wow fadeInLeft templatemo-about-left" data-wow-delay="0.3s">
+					<h3 class="about-title">前端开发工程师：刘策</h3>
+					<p>就读于石家庄科技建工学院，计算机科学与技术专业，本科毕业，2年前端开发工作经验，我不是什么牛人我只是菜鸟，一直在成长中。从事前端开发， 从学习到工作一直从事我热爱的IT行业，每每看到通过努力开发出来的作品都会令我激动不已，只要心中能够永远执着远大的理想，且有不达目的绝不终止的意愿，便能产生惊人的力量。个人格言：需求万变，努力不变！</p>
+					<p>主修课程：程序设计、计算机科学导论、数字电路与逻辑设计、计算机组成原理、数据结构与算法、操作系统、计算机网络、汇编语言程序设计、软件工程、计算机通信技术、信息安全技术等、计算机接口技术</p>
+					<h3 class="about-title">工作经历：</h3>
+					<p>2014-04 北京第嘉传媒文化有限公司 前端开发工程师</p>
+					<p>负责公司产品或项目Web前端开发,根据产品需求和UI效果图利用sublime编程软件进行div/css标准网页制作，Js逻辑设计与开发、jQuery特效编写以及使用插件实现特效，解决主流浏览器兼容性问题，对网站用户体验性能进行优化，完成产品前端展示效果和交互功能。</p>
+					<p>2013-06 秦皇岛市易讯科技开发有限公司 前端开发工程师</p>
+					<p>秦皇岛易讯网络专业从事网站建设、网站制作、网站设计、网页设计、网站推广、SEO优化、百度推广等服务。</p>
+					<p>负责公司项目的前端修改调试和开发工作，精确的将网站设计图重构成html 页面。从ps切图到div和css标准网页制作及主流浏览器兼容问题的解决，并与后台紧密配合，确保代码有效链接。</p>
+				</div>
+				<div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.3s">
+					<span class="text-uppercase">HTML5 &AMP; CSS3 90%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+					</div>
+					<span class="text-uppercase">BOOTSTRAP 90%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+					</div>
+					<span class="text-uppercase">JQuery 70%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+					</div>
+					<span class="text-uppercase">JavaScript 65%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+					</div>
+					<span class="text-uppercase">Node.js 55%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 55%;"></div>
+					</div>
+					<span class="text-uppercase">Angular.js 55%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 55%;"></div>
+					</div>
+					<span class="text-uppercase">Swiper 70%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+					</div>
+					<span class="text-uppercase">Zepto 70%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+					<div class="about-wrapper">
+						<img src="images/team-img-1.png" class="img-responsive" alt="about img">
+						<h3>我的照片</h3>
+						<h5>拍摄于秦皇岛</h5>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+					<div class="about-wrapper">
+						<img src="images/team-img-2.png" class="img-responsive" alt="about img">
+						<h3>我的照片</h3>
+						<h5>拍摄于秦皇岛</h5>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+					<div class="about-wrapper">
+						<img src="images/team-img-3.png" class="img-responsive" alt="about img">
+						<h3>我的照片</h3>
+						<h5>拍摄于秦皇岛</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start portfolio -->
+	<section id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="wow bounceIn">
+						<h2 class="wow bounceIn">参与项目</h2>
+						<hr>
+						<h4>过去24个月参与的项目</h4>
+					</div>
+					<div class="iso-section wow fadeIn" data-wow-delay="0.6s">
 
+						<ul class="filter-wrapper clearfix">
+							<li><a href="#" data-filter="*" class="selected opc-main-bg">所有</a></li>
+							<li><a href="#" class="opc-main-bg" data-filter=".graphic">移动端</a></li>
+							<li><a href="#" class="opc-main-bg" data-filter=".photoshop">响应式</a></li>
+							<li><a href="#" class="opc-main-bg" data-filter=".wallpaper">PC端</a></li>
+						</ul>
 
+						<div class="iso-box-section">
+							<div class="iso-box-wrapper col4-iso-box">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="js/jquery-2.2.0.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/date.js"></script>
-<script src="js/main.js"></script>
-<script>
-
-</script>
+								<div class="iso-box graphic photoshop wallpaper col-md-4 col-sm-6 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="images/portfolio-img-1.jpg" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<div class="portfolio-description">
+												<a href="#" class="fa fa-search"></a>
+												<a href="#" class="fa fa-link"></a>
+												<h4>项目名称</h4>
+												<p>项目简介</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="iso-box graphic wallpaper col-md-4 col-sm-6 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="images/portfolio-img-2.jpg" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<div class="portfolio-description">
+												<a href="#" class="fa fa-search"></a>
+												<a href="#" class="fa fa-link"></a>
+												<h4>项目名称</h4>
+												<p>项目简介</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="iso-box wallpaper col-md-4 col-sm-6 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="images/portfolio-img-3.jpg" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<div class="portfolio-description">
+												<a href="#" class="fa fa-search"></a>
+												<a href="#" class="fa fa-link"></a>
+												<h4>项目名称</h4>
+												<p>项目简介</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="iso-box graphic col-md-4 col-sm-6 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="images/portfolio-img-4.jpg" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<div class="portfolio-description">
+												<a href="#" class="fa fa-search"></a>
+												<a href="#" class="fa fa-link"></a>
+												<h4>项目名称</h4>
+												<p>项目简介</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="iso-box wallpaper col-md-4 col-sm-6 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="images/portfolio-img-5.jpg" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<div class="portfolio-description">
+												<a href="#" class="fa fa-search"></a>
+												<a href="#" class="fa fa-link"></a>
+												<h4>项目名称</h4>
+												<p>项目简介</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="iso-box graphic photoshop col-md-4 col-sm-6 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="images/portfolio-img-6.jpg" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<div class="portfolio-description">
+												<a href="#" class="fa fa-search"></a>
+												<a href="#" class="fa fa-link"></a>
+												<h4>项目名称</h4>
+												<p>项目简介</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end portfolio -->
+	<!-- start contact -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="wow bounceIn">
+						<h2 class="wow bounceIn">联系</h2>
+						<hr>
+						<h4>想了解更多行业信息，请留言...</h4>
+					</div>
+					<form action="#" method="post" role="form">
+						<div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+							<input type="text" placeholder="你的名字" class="form-control">
+						</div>
+						<div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+							<input type="email" placeholder="你的Email" class="form-control">
+						</div>
+						<div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+							<input type="text" placeholder="邮件标题" class="form-control">
+						</div>
+						<div class="col-md-12 col-sm-12 wow fadeIn" data-wow-delay="0.9s">
+							<textarea class="form-control" rows="5" placeholder="信息内容"></textarea>
+						</div>
+						<div class="col-md-offset-3 col-sm-offset-3 col-sm-6 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+							<input type="submit" value="发送信息" class="form-control">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end contact -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="social-icon wow fadeIn" data-wow-delay="0.3s">
+						<li><a href="#" class="fa fa-qq"></a></li>
+						<li><a href="#" class="fa fa-weixin"></a></li>
+						<li><a href="#" class="fa fa-github"></a></li>
+					</ul>
+					<p class="wow bounceIn">Copyright &copy; <span>个人博客</span> 2015 | 刘策</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/imagesloaded.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/custom.js"></script>
 </body>
 </html>
