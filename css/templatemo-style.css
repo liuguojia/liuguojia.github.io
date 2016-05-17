@@ -4,7 +4,9 @@ Workforce Template
 
 
 */
-
+html,body{
+    font-family:"微软雅黑" !important;
+}
 body
     {
         background: #f9f9f9;
