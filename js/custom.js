@@ -1,7 +1,7 @@
 
 // preloader
 $(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
+    $('.preloader').fadeOut(1000); // set duration in brackets
 });
 
 $(document).ready(function() {
@@ -20,9 +20,9 @@ $(document).ready(function() {
 	        $(".navbar-fixed-top").removeClass("top-nav-collapse");
 	    }
 	});
-	
+
 	/* FlexSlider
-	-----------------------------*/ 
+	-----------------------------*/
   	$('.flexslider').flexslider({
       animation: "fade",
       directionNav: false,
@@ -30,9 +30,9 @@ $(document).ready(function() {
 
   	/* isotope
   	------------------------------*/
-  	if ( $('.iso-box-wrapper').length > 0 ) { 
+  	if ( $('.iso-box-wrapper').length > 0 ) {
 
-	    var $container 	= $('.iso-box-wrapper'), 
+	    var $container 	= $('.iso-box-wrapper'),
 	    	$imgs 		= $('.iso-box img');
 
 	    $container.imagesLoaded(function () {
@@ -53,18 +53,18 @@ $(document).ready(function() {
 
 	        var $this = $(this), filterValue = $this.attr('data-filter');
 
-			$container.isotope({ 
+			$container.isotope({
 				filter: filterValue,
-				animationOptions: { 
-				    duration: 750, 
-				    easing: 'linear', 
-				    queue: false, 
-				}              	 
-			});	            
+				animationOptions: {
+				    duration: 750,
+				    easing: 'linear',
+				    queue: false,
+				}
+			});
 
-			// don't proceed if already selected 
-			if ( $this.hasClass('selected') ) { 
-				return false; 
+			// don't proceed if already selected
+			if ( $this.hasClass('selected') ) {
+				return false;
 			}
 
 			var filter_wrapper = $this.closest('.filter-wrapper');
@@ -72,7 +72,7 @@ $(document).ready(function() {
 			$this.addClass('selected');
 
 	      return false;
-	    }); 
+	    });
 	}
 
 	/* wow
