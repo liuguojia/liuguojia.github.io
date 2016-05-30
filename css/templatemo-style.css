@@ -271,7 +271,7 @@ h4
 #service .media .fa
     {
         color: #55acee;
-        font-size: 60px;
+        font-size: 40px;
         margin-right: 20px;
         width: 65px;
         height: 65px;
@@ -279,9 +279,12 @@ h4
 #service .media .media-heading
     {
         font-weight: 600;
-        font-size: 20px;
+        font-size: 14px;
         padding-bottom: 10px;
     }
+.text-uppercase{
+    text-transform: none !important;
+}
 /* end service */
 
 /* start divider */
